@@ -1,0 +1,56 @@
+#box .el-form-item__label {
+  width: 150px !important;
+  font-size: 15px !important;
+}
+
+#box .el-form-item {
+  margin: 50px 0 !important;
+}
+
+#box .el-button--primary {
+  margin: 35px 0;
+  padding: 10px 20px !important;
+  font-size: 19px !important;
+}
+
+.login .el-form-item__label {
+  width: 80px !important;
+  font-size: 15px !important;
+}
+
+.el-icon-search {
+  margin: 11px auto;
+}
+
+.ipt .el-input__inner {
+  border-radius: 0 !important;
+  border-top-left-radius: 4px !important;
+  border-bottom-left-radius: 4px !important;
+}
+
+.el-icon-warning {
+  color: #e6a23c;
+  font-size: 25px;
+}
+
+.authName .el-icon-close {
+  margin-left: 5px;
+  margin-top: 2px !important;
+}
+
+.commodity .el-icon-success {
+  color: skyblue;
+}
+
+.commodity .el-table__expanded-cell {
+  padding: 0 !important;
+}
+
+.cascader .el-input__inner {
+  width: 312px !important;
+}
+
+.box-card .el-tag.el-tag--warning {
+  margin: 10px 0;
+}
+/*# sourceMappingURL=ui.css.map */

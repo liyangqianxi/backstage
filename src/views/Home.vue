@@ -1,18 +1,25 @@
 <template>
-  <div class="home">
-    <img alt="Vue logo" src="../assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js + TypeScript App"/>
-  </div>
+    <div class="homeBox">欢迎来到小爱后台管理系统</div>
 </template>
 
 <script lang="ts">
-import { defineComponent } from 'vue';
-import HelloWorld from '@/components/HelloWorld.vue'; // @ is an alias to /src
+import { defineComponent } from 'vue'
+import _ from 'lodash'
 
 export default defineComponent({
-  name: 'Home',
-  components: {
-    HelloWorld,
-  },
-});
+    setup() {
+        return {}
+    }
+})
 </script>
+
+<style scoped>
+.homeBox {
+    font-size: 25px;
+    font-weight: bolder;
+    width: 100%;
+    height: 420px;
+    text-align: center;
+    line-height: 350px;
+}
+</style>

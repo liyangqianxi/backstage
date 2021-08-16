@@ -1,30 +1,34 @@
 <template>
-  <div id="nav">
-    <router-link to="/">Home</router-link> |
-    <router-link to="/about">About</router-link>
-  </div>
-  <router-view/>
+    <el-config-provider :locale="locale">
+        <router-view />
+    </el-config-provider>
 </template>
 
-<style lang="scss">
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-}
 
-#nav {
-  padding: 30px;
+<script lang="ts">
+import { defineComponent } from 'vue'
+import { ElConfigProvider } from 'element-plus'
 
-  a {
-    font-weight: bold;
-    color: #2c3e50;
+import zhCn from 'element-plus/lib/locale/lang/zh-cn'
 
-    &.router-link-exact-active {
-      color: #42b983;
+export default defineComponent({
+    components: {
+        [ElConfigProvider.name]: ElConfigProvider
+    },
+    setup() {
+        return {
+            locale: zhCn
+        }
     }
-  }
+})
+</script>
+
+
+<style lang="scss">
+@import './styles/ui';
+// @import './styles/common.scss';
+* {
+    padding: 0;
+    margin: 0;
 }
 </style>
